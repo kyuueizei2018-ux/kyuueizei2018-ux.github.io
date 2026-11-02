@@ -72,3 +72,11 @@ npm run preview
 - 大字号文字做遮罩 reveal 时，最终值使用负 inset 的 overscan，并在结束时 `clearProps: "clipPath"`。否则 line-height 小于字号时，字形上下溢出会被 `inset(0)` 裁掉，表现为大字显示不全。
 - 旧的「项目大卡片 / 项目详情弹窗」已由作品海报区取代，相关组件与样式已移除。
 - 首屏视频为现有素材；个人画像已替换为 `portrait-2026.webp`，如需更换保持文件名即可。
+
+## 在线部署
+
+- 线上地址：https://kyuueizei2018-ux.github.io/
+- 源码仓库：https://github.com/kyuueizei2018-ux/kyuueizei2018-ux.github.io
+- `main` 保存源码，`gh-pages` 保存 `dist` 构建产物；GitHub Pages 从 `gh-pages` 分支发布。
+- 更新线上：修改源码并提交 `main`，然后 `npm run build`，把 `dist/` 内容更新到 `gh-pages` 分支。
+
